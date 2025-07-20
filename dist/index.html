@@ -19,11 +19,23 @@
             alt=""
           />
         </div>
-        <div>
+        <div class="text-black text-xl font-medium">
           TailwindCSS
-          <p>by vishal rathod</p>
+          <p class="text-xl text-slate-500 font-medium">by vishal rathod</p>
         </div>
       </div>
+      <button
+        class="flex mx-auto mt-2 px-8 py-3 text-xl text-white border border-amber-100 rounded-lg"
+        id="btn"
+      >
+        Click Me!
+      </button>
     </div>
   </body>
+  <script>
+    const btn = document.querySelector("#btn");
+    btn.addEventListener("click", () => {
+      alert("Button Clicked");
+    });
+  </script>
 </html>
